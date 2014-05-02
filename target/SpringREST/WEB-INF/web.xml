@@ -19,4 +19,14 @@
         <servlet-name>main</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>filtrResponsa</filter-name>
+        <filter-class>com.maciej.filters.CROSFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>filtrResponsa</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>

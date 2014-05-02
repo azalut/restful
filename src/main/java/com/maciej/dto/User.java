@@ -1,8 +1,15 @@
 package com.maciej.dto;
 
+import org.codehaus.jackson.annotate.JsonAutoDetect;
+
+@JsonAutoDetect
 public class User {
     private String name;
     private String lastname;
+
+    public User(){
+
+    }
 
     public User(String name, String lastname) {
         this.name = name;
